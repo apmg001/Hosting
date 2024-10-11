@@ -18,6 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
         startScrollLeft = carousel.scrollLeft;
     };
 
+   
+    const featureList = document.getElementById('feature-list');
+
+    function scrollLeft() {
+        featureList.scrollBy({
+            left: -300, // Adjust the scroll distance as per need
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        featureList.scrollBy({
+            left: 300, // Adjust the scroll distance as per need
+            behavior: 'smooth'
+        });
+    }
+
     const dragging = (e) => {
         if (!isDragging) return;
     
