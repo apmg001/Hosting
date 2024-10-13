@@ -926,3 +926,67 @@ transform: rotateY(180deg);
 
 
 
+/* Features Section Styling with Numbering */
+.feature-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100%;
+  position: relative;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Numbering and Feature Heading Styles */
+.feature-number {
+  font-size: 32px; /* Adjust to match the general font size */
+  font-weight: 600;
+  color: #229a86; /* Color matching website's theme */
+  margin-bottom: 1rem;
+}
+
+/* Body Text Style */
+.feature-card p {
+  font-size: 18px; /* Adjust to match website font size */
+  color: #666;
+}
+
+/* General Section Heading */
+.features .naam {
+  font-size: 40px; /* Match existing large headers */
+  font-weight: bold;
+  color: #229a86; /* Same color as headings */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+      margin-bottom: 1rem;
+  }
+
+  .feature-number {
+      font-size: 28px; /* Slightly smaller for mobile */
+  }
+
+  .feature-card p {
+      font-size: 16px;
+  }
+
+  .features .naam {
+      font-size: 32px; /* Adjust header size on mobile */
+  }
+}
+
+/* Additional spacing and aesthetics */
+.features .row {
+  margin-top: 2rem;
+}
+
+
+
+
+
